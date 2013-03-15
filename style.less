@@ -5,59 +5,60 @@
        -o-transform: rotate(@degrees);
           transform: rotate(@degrees);
 }
+.css-checkbox(@size,@color){
+    .outer{
+        width:@size;
+        height: @size;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+    }
 
-.outer{
-    @size:100px;
-    width:@size;
-    height: @size;
-    background-color: white;
-    position: relative;
-    overflow: hidden;
+    .inner{
+        position: absolute;
+        width:100%;
+        height:100%;
+        background-color: @color;
+        .rotate(45deg);
+
+        bottom:25%;
+    }
+
+    .inner2{
+        position: absolute;
+        width:100%;
+        height:100%;
+        background-color: white;
+        .rotate(45deg);
+
+        bottom:50%;
+    }
+
+    .inner3{
+        width:100%;
+        height:100%;
+        position: absolute;
+        bottom:50%;
+        right:27%;
+        background-color: white;
+        .rotate(45deg);
+    }
+
+
+    .inner4{
+        width:100%;
+        height:100%;
+        position: absolute;
+        top: -50%;
+        right: -75%;
+        background-color: white;
+        .rotate(45deg);
+    }
 }
 
-.style2{
-    width: 17px;
-    height: 17px;
+.check-green{
+    .css-checkbox(100px,green);
 }
-
-.inner{
-    position: absolute;
-    width:100%;
-    height:100%;
-    background-color: green;
-    .rotate(45deg);
-
-    bottom:25%;
+.check-red{
+    .css-checkbox(25px,red);
 }
-
-.inner2{
-    position: absolute;
-    width:100%;
-    height:100%;
-    background-color: white;
-    .rotate(45deg);
-
-    bottom:50%;
-}
-
-.inner3{
-    width:100%;
-    height:100%;
-    position: absolute;
-    bottom:50%;
-    right:27%;
-    background-color: white;
-    .rotate(45deg);
-}
-
-
-.inner4{
-    width:100%;
-    height:100%;
-    position: absolute;
-    top: -50%;
-    right: -75%;
-    background-color: white;
-    .rotate(45deg);
-}
-

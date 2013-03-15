@@ -1,6 +1,7 @@
 !!!DOCTYPE=html5
 mixin checkbox
-    div.outer(attributes)
+    div(attributes)
+        div.outer
             div.inner
             div.inner2
             div.inner3
@@ -11,9 +12,5 @@ html
         link(rel="stylesheet", type="text/css", href="style.css")
     body
 
-        div.outer
-            div.inner
-            div.inner2
-            div.inner3
-            div.inner4
-        +checkbox().style2
+        +checkbox().check-green
+        +checkbox().check-red

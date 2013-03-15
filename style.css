@@ -1,19 +1,15 @@
-.outer {
+.check-green .outer {
   width: 100px;
   height: 100px;
   background-color: white;
   position: relative;
   overflow: hidden;
 }
-.style2 {
-  width: 17px;
-  height: 17px;
-}
-.inner {
+.check-green .inner {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: green;
+  background-color: #008000;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -21,7 +17,7 @@
   transform: rotate(45deg);
   bottom: 25%;
 }
-.inner2 {
+.check-green .inner2 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -33,7 +29,7 @@
   transform: rotate(45deg);
   bottom: 50%;
 }
-.inner3 {
+.check-green .inner3 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -46,7 +42,64 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.inner4 {
+.check-green .inner4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -50%;
+  right: -75%;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.check-red .outer {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+.check-red .inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  bottom: 25%;
+}
+.check-red .inner2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  bottom: 50%;
+}
+.check-red .inner3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 50%;
+  right: 27%;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.check-red .inner4 {
   width: 100%;
   height: 100%;
   position: absolute;
