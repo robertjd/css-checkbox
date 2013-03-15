@@ -1,0 +1,19 @@
+!!!DOCTYPE=html5
+mixin checkbox
+    div.outer(attributes)
+            div.inner
+            div.inner2
+            div.inner3
+            div.inner4
+
+html
+    head
+        link(rel="stylesheet", type="text/css", href="style.css")
+    body
+
+        div.outer
+            div.inner
+            div.inner2
+            div.inner3
+            div.inner4
+        +checkbox().style2

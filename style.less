@@ -1,0 +1,63 @@
+.rotate(@degrees) {
+  -webkit-transform: rotate(@degrees);
+     -moz-transform: rotate(@degrees);
+      -ms-transform: rotate(@degrees);
+       -o-transform: rotate(@degrees);
+          transform: rotate(@degrees);
+}
+
+.outer{
+    @size:100px;
+    width:@size;
+    height: @size;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.style2{
+    width: 17px;
+    height: 17px;
+}
+
+.inner{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: green;
+    .rotate(45deg);
+
+    bottom:25%;
+}
+
+.inner2{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: white;
+    .rotate(45deg);
+
+    bottom:50%;
+}
+
+.inner3{
+    width:100%;
+    height:100%;
+    position: absolute;
+    bottom:50%;
+    right:27%;
+    background-color: white;
+    .rotate(45deg);
+}
+
+
+.inner4{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: -50%;
+    right: -75%;
+    background-color: white;
+    .rotate(45deg);
+}
+
