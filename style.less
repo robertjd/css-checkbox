@@ -5,10 +5,10 @@
        -o-transform: rotate(@degrees);
           transform: rotate(@degrees);
 }
-.css-checkbox(@size,@color){
+.checkmark{
     .outer{
-        width:@size;
-        height: @size;
+        width:25px;
+        height:25px;
         background-color: white;
         position: relative;
         overflow: hidden;
@@ -18,7 +18,7 @@
         position: absolute;
         width:100%;
         height:100%;
-        background-color: @color;
+        background-color: #000;
         .rotate(45deg);
 
         bottom:25%;
@@ -56,9 +56,19 @@
     }
 }
 
+.checkmark(@size,@color){
+    .outer{
+        width:@size;
+        height: @size;
+    }
+    .inner{
+        background-color: @color;
+    }
+}
+
 .check-green{
-    .css-checkbox(100px,green);
+    .checkmark(100px,green);
 }
 .check-red{
-    .css-checkbox(25px,red);
+    .checkmark(25px,red);
 }
